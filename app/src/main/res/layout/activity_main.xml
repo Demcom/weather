@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.demcom.wheter.MainActivity">
+
+    <include
+        layout="@layout/top_bar"
+        />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <TextView
+                android:id="@+id/textView_temperature"
+                android:text="Hola mundo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:id="@+id/bottom_menu"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorLightGray"
+                android:elevation="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="150">
+
+                    <RelativeLayout
+                        android:id="@+id/button_weather"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="50">
+                        <RelativeLayout
+                            android:layout_width="42dp"
+                            android:layout_height="48dp"
+                            android:layout_centerInParent="true"
+                            android:background="@mipmap/ic_wine"
+                            android:layout_marginBottom="6dp"
+                            android:layout_marginTop="6dp"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/button_earth_map"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="50">
+                        <RelativeLayout
+                            android:layout_width="42dp"
+                            android:layout_height="48dp"
+                            android:layout_centerInParent="true"
+                            android:background="@mipmap/ic_beer"
+                            android:layout_marginBottom="6dp"
+                            android:layout_marginTop="6dp"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="50">
+                        <RelativeLayout
+                            android:layout_width="42dp"
+                            android:layout_height="48dp"
+                            android:layout_centerInParent="true"
+                            android:background="@mipmap/ic_coffe"
+                            android:layout_marginBottom="6dp"
+                            android:layout_marginTop="6dp"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+</LinearLayout>
