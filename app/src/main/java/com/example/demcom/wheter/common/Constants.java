@@ -10,4 +10,7 @@ public class Constants {
     public static final String WEATHER_INDEX = "Index";
     public static final String WEATHER_TEMPERATURE = "Temperature";
     public static final String WEATHER_HUMIDITY = "Humidity";
+    public static final String HUMIDITY_PERCENT = "%";
+    public static final String TEMPERATURE_MESURE = " ºC";
+
 }
